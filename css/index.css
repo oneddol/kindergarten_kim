@@ -4,7 +4,9 @@
 .row { max-width:1167px; margin:0 auto;}
 header, footer, section, article, aside, nav, main, figure{display:block;}
 /*호환되지 않는 브라우저에서 인라인 요소로 인식할수도 있기 때문에 블락 요소로 설정*/
-
+.skip a{background:#000; color:#fff; text-align:center; display:block;
+    width:1px; height:1px; overflow:hidden; position:absolute; top:-100px;}
+.skip a:focus{width:100%; height:auto; padding:10px 0; position:fixed;  top:0; z-index:99999;}
 /*-------------------------header-----------------------------*/
 #header {position:fixed; width:100%; top:0; left:0; 
     background:#fff; box-shadow:0 1px 3px #eee; z-index:9999;}
