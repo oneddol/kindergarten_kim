@@ -1,0 +1,60 @@
+@charset "UTF-8";
+.row { max-width:1167px; margin:0 auto;}
+.skip a{background:#000; color:#fff; text-align:center; display:block;
+    width:1px; height:1px; overflow:hidden; position:absolute; top:-100px;}
+.skip a:focus{width:100%; height:auto; padding:10px 0; position:fixed;  top:0; z-index:99999;}
+
+/*-------------------------header----------------------------------------------------------------*/
+#header {position:fixed; width:100%; top:0; left:0; 
+    background:#fff; box-shadow:0 1px 3px #eee; z-index:9999;}
+.topmenu { background:#f76f6f; color:rgba(255,255,255,0.7); padding:10px 0;
+    letter-spacing:-0.5px;}
+.topmenu .row{position:relative;}
+.topmenu a{transition:all 0.5s;}
+.topmenu a:hover{color:rgba(255,255,255,1);}
+.topmenu .sns a { padding-right:10px; font-size:12.2px;}
+.topmenu .sns a:first-child span{font-size:11px;}
+.topmenu .login {position:absolute; top:0; right:0; color:#000;}
+.topmenu .login a {padding-left:10px; font-size:11px;}
+
+.logoNav {position:relative; height:76px;}
+.logoNav h1 {color:#ffa23d; font-size:26.25px; font-weight:bold; 
+    line-height:76px; /*세로 가운데 정렬 - 부모박스와 같은 높이의 line-height*/ }
+.logoNav .nav {position:absolute; top:0; right:0;}
+.logoNav .nav .depth1 > li{display:inline-block; position:relative;
+    font-size:15.75px; line-height:76px; padding-left:30px; font-weight:bold; transition:all 0.25s;}
+.logoNav .nav .depth1 > li:hover{color:#ffd23c;}
+.logoNav .nav .depth1 > li:first-child{color:#ffd23c;}
+.logoNav .nav .depth1 > li > a:after{
+    content:"\f107"; font-family:'Font Awesome 5 Free'; font-weight:900;
+    color:#ddd; padding-left:10px;
+}/*css에서 웹폰트 적용하는 방법 - 카페 notice글 참고*/
+.logoNav .nav .depth1 > li:first-child > a:after{display:none;}
+.logoNav .nav .depth1 > li:nth-child(5) > a:after{display:none;}
+/*--------------sub menu-------------------------------------------------------------------------*/
+.logoNav .depth2{position:absolute; top:85%; left:0; width:168px; /*li와 같은 넓이로 하단에 생성*/
+    background:white; border-radius:5px; padding:0 15px; margin-left:15px;
+    box-shadow:0px 0px 15px #ddd;
+    display:none}
+.logoNav .depth2:before{content:""; position:absolute; bottom:98%; left:10%;
+    border-bottom:10px solid #fff;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+}
+.logoNav .depth1 > li:hover .depth2{ display:block;}
+    /* padding-left:30px;} */
+.logoNav .depth2 > li{line-height:38px; font-size:16px; color:#ffae3d;}
+
+/*----------------footer-------------------------------------------------------------------------*/
+#footer {text-align:center; font-size:12.25px;}
+.footerMenu { background:#eee; color:#333; padding:10px 0;}
+.footerMenu a {padding-left:11px;}
+.footerMenu a:before{content:"|"; padding-right:11px; font-size:6px;
+    position:relative; top:-1px;}
+.footerMenu a:first-child:before{display:none;}
+.comInfo {background:#222; color:rgba(255,255,255,0.5); padding:40px;}
+.comInfo .sns a{font-size:20px; padding:0 10px 10px; display:inline-block;}
+.comInfo .info span{letter-spacing:-1px; padding-left:5px;}
+.comInfo .info span:before{content:"|"; padding-right:7px; font-size:6px;
+    position:relative; top:-1px;}
+.copyright { background:#0a0a0a; color:#333333; font-size:10.5px; padding:10px 0;}
