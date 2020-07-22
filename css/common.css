@@ -6,10 +6,10 @@
 
 /*-------------------------header----------------------------------------------------------------*/
 #header {position:fixed; width:100%; top:0; left:0; 
-    background:#fff; box-shadow:0 1px 3px #eee; z-index:9999;}
+    background:#fff; box-shadow:0 3px 3px #eee; z-index:9999;}
+.topmenu .row{position:relative;}
 .topmenu { background:#f76f6f; color:rgba(255,255,255,0.7); padding:10px 0;
     letter-spacing:-0.5px;}
-.topmenu .row{position:relative;}
 .topmenu a{transition:all 0.5s;}
 .topmenu a:hover{color:rgba(255,255,255,1);}
 .topmenu .sns a { padding-right:10px; font-size:12.2px;}
