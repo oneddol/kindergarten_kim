@@ -133,14 +133,52 @@
                         <li>
                             <label for="addr_lbl" class="tit_lbl">거주지 주소</label>
                             <div class="info_content">
-                                <input class="w160 mtb3" type="text" id="addr_lbl"> <button type="button">우편번호검색</button>
-                                <input class="w70p mtb3" type="text" id="addr1">(도로명주소)<br>
-                                <input class="w70p mtb3" type="text" id="addr2">(지번주소)<br>
-                                <input class="w70p mtb3" type="text" id="addr3">(나머지주소)
+                                <input class="w160 mb3" type="text" id="addr_lbl"> <button type="button">우편번호검색</button><br>
+                                <input class="w70p mb3" type="text" id="addr1"><span>(도로명주소)</span><br>
+                                <input class="w70p mb3" type="text" id="addr2"><span>(지번주소)</span><br>
+                                <input class="w70p mb3" type="text" id="addr3"><span>(나머지주소)</span>
                             </div>
                         </li>
-
+                        <li>
+                            <label for="birthday" class="tit_lbl">생년월일</label>
+                            <div class="info_content">
+                                <input class="w160" type="date" id="birthday" placeholder="2020-07-22">
+                            </div>
+                        </li>
+                        <li>
+                            <label class="tit_lbl">성별</label>
+                            <div class="info_content gender_area">
+                                <input type="radio" value="남성" name="gender" id="male">
+                                <label for="male">남성</label>
+                                <input type="radio" value="여성" name="gender" id="female">
+                                <label for="female">여성</label>
+                            </div>
+                        </li>
+                        <li>
+                            <label class="tit_lbl">취미</label>
+                            <div class="info_content hobby_area">
+                                <input type="checkbox" id="all">
+                                <label for="all">전체 선택</label>
+                                <input type="checkbox" value="영화 감상" id="hobby1" name="hobby1">
+                                <label for="hobby1">영화 감상</label>
+                                <input type="checkbox" value="보드 타기" id="hobby2" name="hobby2">
+                                <label for="hobby2">보드 타기</label>
+                                <input type="checkbox" value="낚시" id="hobby3" name="hobby3">
+                                <label for="hobby3">낚시</label>
+                            </div>
+                        </li>
+                        <li>
+                            <label class="tit_lbl" for="query">문의사항</label>
+                            <div class="info_content">
+                                <textarea name="query" id="query" class="w70p" placeholder="내용을 입력하세요.(20글자 이내)" maxlength="20"></textarea>
+                                <p>남은글자 : <span>20</span>글자</p>
+                            </div>
+                        </li>
                     </ul>
+                    <div class="btn">
+                        <input type="submit" value="가입완료">
+                        <input type="reset" value="작성취소">
+                    </div>
                 </fieldset>
             </form>
         </div>
