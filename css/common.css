@@ -6,7 +6,7 @@
 
 /*-------------------------header----------------------------------------------------------------*/
 #header {position:fixed; width:100%; top:0; left:0; 
-    background:#fff; box-shadow:0 3px 3px #eee; z-index:9999;}
+    background:#fff; box-shadow:0 3px 3px #eee; z-index:1000;}
 .topmenu .row{position:relative;}
 .topmenu { background:#f76f6f; color:rgba(255,255,255,0.7); padding:10px 0;
     letter-spacing:-0.5px;}
