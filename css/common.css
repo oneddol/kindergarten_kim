@@ -9,7 +9,10 @@
     background:#fff; box-shadow:0 3px 3px #eee; z-index:1000;}
 .topmenu .row{position:relative;}
 .topmenu { background:#f76f6f; color:rgba(255,255,255,0.7); padding:10px 0;
-    letter-spacing:-0.5px;}
+    letter-spacing:-0.5px; position:relative;}
+.topmenu .search_box{position:absolute; left:150px; top:0;}
+.topmenu .search_box fieldset{border:2px solid #ffa23d; padding-right:5px; border-radius:2px; background:white;}
+.topmenu .search_box input{border:none; padding:4px 0.5em; }
 .topmenu a{transition:all 0.5s;}
 .topmenu a:hover{color:rgba(255,255,255,1);}
 .topmenu .sns a { padding-right:10px; font-size:12.2px;}
