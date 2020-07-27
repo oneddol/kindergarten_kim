@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url(reset.css);
 @import url(common.css);
+@import url(rwdcommon.css);
 
 #login_page{padding:217px 0 100px;}
 #login_page h2{text-align:center; font-size:30px; padding-bottom:30px;}

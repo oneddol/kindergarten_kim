@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url(reset.css);
 @import url(common.css);
+@import url(rwdcommon.css);
 
 #join_page{padding:217px 0 100px;}
 #join_page h2{text-align:center; font-size:30px; padding-bottom:30px;}
