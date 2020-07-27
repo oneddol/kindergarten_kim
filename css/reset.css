@@ -22,6 +22,7 @@ strong, th { font-weight:normal }
 address, em { font-style:normal }
 fieldset{border:none;}
 legend{display:none;}
+button{border:none; background:none;}
 
 
 
