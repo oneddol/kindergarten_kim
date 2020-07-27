@@ -22,7 +22,7 @@
 
 .logoNav {position:relative; height:76px;}
 .logoNav h1 {color:#ffa23d; font-size:26.25px; font-weight:bold; 
-    line-height:76px; /*세로 가운데 정렬 - 부모박스와 같은 높이의 line-height*/ }
+    line-height:76px;} /*세로 가운데 정렬 - 부모박스와 같은 높이의 line-height*/ 
 .logoNav .nav {position:absolute; top:0; right:0;}
 .logoNav .nav .depth1 > li{display:inline-block; position:relative;
     font-size:15.75px; line-height:76px; padding-left:30px; font-weight:bold; transition:all 0.25s;}
@@ -61,3 +61,14 @@
 .comInfo .info span:before{content:"|"; padding-right:7px; font-size:6px;
     position:relative; top:-1px;}
 .copyright { background:#0a0a0a; color:#333333; font-size:10.5px; padding:10px 0;}
+
+/*-----------------반응형 디자인 설정하기-------------------------*/
+@media only screen and (max-width:1170px) {
+    .row{padding:0 10px;}
+}
+@media only screen and (max-width:992px){
+    .logoNav {position:relative; height:auto;}
+    .logoNav h1 {color:#ffa23d; font-size:26.25px; font-weight:bold; 
+        line-height:76px; text-align:center;}
+    .logoNav .nav {position:static; top:0; right:0; text-align:center;}
+}
